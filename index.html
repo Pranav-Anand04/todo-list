@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List - A To-Do List to store all important Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <div id="alert" hidden>
+        <p class="message">&#9888; Please fill out the ToDo</p>
+      </div>
+    </div>
+    <nav class="contrast">
+      <ion-icon class="icon" id="icon" name="contrast"></ion-icon>
+    </nav>
+    <header>
+      <h1 class="title">ToDo List</h1>
+      <form id="newTaskForm">
+        <input
+          type="text"
+          id="newTaskInput"
+          placeholder="e.g Do Homework"
+          autofocus
+        />
+        <button class="addButton">Add List</button>
+      </form>
+    </header>
+
+    <main>
+      <div id="ToDoList">
+        <h2>ToDo</h2>
+
+        <div id="ToDo">
+          <!--
+          <div class="ToDo-lists">
+            <div class="content">
+              <input type="text" class="text" placeholder="ToDo" readonly />
+            </div>
+            <div class="action">
+              <button class="completed">completed</button>
+              <button class="edit">Edit</button>
+              <button class="delete">delete</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="horray_popup" hidden>
+        <div>
+          <h1 class="hooratText">HOORAY, Task completed!!</h1>
+          <button class="okButton">OK!</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

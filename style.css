@@ -1,0 +1,225 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: rgb(24, 133, 223);
+  padding-right: 30px;
+  transition: 2s;
+}
+
+#alert {
+  border: solid;
+  background-color: rgba(64, 98, 173, 0.295);
+  max-width: 400px;
+  text-align: center;
+  border-radius: 100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.message {
+  font-size: 20px;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  transition: 0.5s;
+}
+
+.icon:active {
+  transform: translatey(10px);
+}
+
+.contrast {
+  margin-left: 97%;
+}
+
+header,
+main {
+  margin-top: 80px;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  background: none;
+  appearance: none;
+}
+
+#newTaskForm {
+  display: flex;
+}
+
+#newTaskInput {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(24, 133, 223);
+  border: solid;
+  border-color: black;
+  height: 40px;
+  max-width: 800px;
+  width: 500px;
+  border-radius: 200px;
+  padding-left: 10px;
+  background-color: rgb(34, 32, 32);
+  transition: 0.5s;
+}
+
+#newTaskInput::placeholder {
+  color: rgb(24, 133, 223);
+}
+#newTaskInput:hover {
+  transform: translatey(5px);
+}
+
+.addButton {
+  font-size: 16px;
+  border: solid;
+  color: yellowgreen;
+  border-color: black;
+  border-radius: 45px;
+  height: 45px;
+  width: 150px;
+  margin-left: 20px;
+  background-color: rgb(34, 32, 32);
+  transition: 0.5s;
+}
+
+.ToDo-lists {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  height: 20px;
+  max-width: 680px;
+  border: solid;
+  padding: 10px;
+  border-color: black;
+  border-radius: 400px;
+  background-color: rgb(16, 15, 15);
+  box-shadow: 0px 0px 40px royalblue;
+  transition: 0.5s;
+}
+
+.ToDo-lists:hover {
+  transform: translatey(5px);
+}
+
+.text {
+  color: rgb(24, 133, 223);
+  width: 100%;
+  font-size: 17px;
+}
+
+.content {
+  flex: 1 1 0%;
+}
+
+.edit {
+  color: yellowgreen;
+  transition: 0.5s;
+}
+
+.edit:hover,
+.delete:hover {
+  cursor: pointer;
+}
+
+.delete {
+  color: crimson;
+}
+
+.icon:hover,
+.addButton:hover {
+  cursor: pointer;
+  transform: translatey(2px);
+}
+
+.completed {
+  color: darkorchid;
+}
+
+.completed:hover {
+  cursor: pointer;
+}
+
+.icon:active,
+.addButton:active {
+  cursor: pointer;
+  transform: translatey(5px);
+}
+
+.horray_popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid;
+  border-radius: 100px;
+  border-color: rgb(0, 47, 255);
+  background-image: url(smile.jpeg);
+  background-size: cover;
+  background-position-x: 10px;
+  background-position-y: 30px;
+  box-shadow: 0px 0px 40px royalblue;
+  color: white;
+  height: 80%;
+  max-height: 800px;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  transition: 0.5s;
+  z-index: 100;
+}
+
+@media only screen and (max-width: 600px) {
+  .horray_popup {
+    background-position-x: -60px;
+    background-position-y: 80px;
+  }
+}
+.hooratText {
+  display: flex;
+  font-size: 40px;
+  padding-left: 95px;
+}
+
+.okButton {
+  position: fixed;
+  top: 87%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  border: solid;
+  border-color: rgb(0, 47, 255);
+  box-shadow: 0px 0px 40px royalblue;
+  border-radius: 100px;
+  transition: 0.5s;
+  height: 60px;
+  width: 100px;
+  color: white;
+  font-size: larger;
+  box-shadow: 3px 5px 40px black;
+  margin-left: 20px;
+}
+
+.okButton:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.okButton:active {
+  cursor: pointer;
+  background-color: darkblue;
+}
